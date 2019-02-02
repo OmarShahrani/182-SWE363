@@ -1,0 +1,161 @@
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.grid-container {
+  display: grid;
+  width: 1518px;
+  height: 700px;
+  background-color: lightgrey;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5fr 13fr 2fr;
+}
+
+.header-grid {
+  display: grid;
+  height: 150px;
+  grid-template-columns: 4fr 1fr;
+  border: solid 1px black;
+}
+
+.bannar {
+  background-image: url("http://faculty.kfupm.edu.sa/GSD/siradag/logo-KFUPM.png"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  /*height: 300px; /* You must set a specified height */
+  /*background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+  background-size: 70%; /* Resize the background image to cover the entire container */
+}
+
+.login {
+  display: grid;
+  /*height: 300px;*/
+  background-position: right; /* Center the image */
+  background-color: lightgrey;
+  padding: 0% 10% 10%;
+  border: solid 1px black;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 2px 2px;
+  margin: 0px 0;
+  display: inline-block;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 6px 6px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  padding: 6px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 6px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 100px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+}
+.main-grid {
+  display: grid;
+  height: 700px;
+  grid-template-columns: 4fr 1fr;
+  border: solid 1px black;
+}
+
+.map-picture {
+  /*background-image: url("http://www.mapnews.com/wp-content/uploads/2018/07/kfupm.jpg"); /* The image used */
+  /*height: 400px; /* You must set a specified height */
+  background-position: left; /* Left the image */
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  /* Resize the background image to cover the entire container */
+}
+
+.news-side {
+  display: grid;
+  /*height: 350px;*/
+  background-color: lightgray;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 8fr 8fr;
+  border: solid 1px black;
+}
+
+.news-title {
+  text-align: center;
+  color: blue;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.upper-news {
+  display: grid;
+  grid-template-rows: 8fr 1fr 4fr;
+}
+
+.upper-news-picture {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW9UrX6wCMBn4IzgwNC0aWFTi1GPsT3M0QUiqZV_dqW7alfqyO"); /* The image used */
+  background-repeat: no-repeat;
+  background-size: 100%; /* Resize the background image to cover the entire container */
+  background-position: center;
+}
+
+.upper-news-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.lower-news {
+  display: grid;
+  grid-template-rows: 8fr 1fr 4fr;
+}
+
+.lower-news-picture {
+  background-image: url("https://news.kfupm.edu.sa/media/images/DSC_6780.width-600.jpg"); /* The image used */
+  background-repeat: no-repeat;
+  background-size: 100%; /* Resize the background image to cover the entire container */
+  background-position: center;
+}
+
+.lower-news-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer-grid {
+  display: grid;
+  background-color: lightgrey;
+  grid-template-columns: 10fr 1fr;
+  border: solid 2px black;
+}
+
+.Copyrights-text {
+  font-size: 15px;
+}
+.sitemap {
+  font-size: 15px;
+}
