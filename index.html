@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>King Fahad University for Petroleum and Minerals</title>
+
+    <!-- HTML Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <title>King Fahad University for Petroleum and Minerals</title>
+    <meta
+      name="description"
+      content="King Fahd University of Petroleum & Minerals (KFUPM) was officially established by Royal Decree on 5 Jumada 1, 1383 (23 September, 1963). The first students were admitted a year later, on 23 September, 1964, when 67 young men enrolled in what was then named the College of Petroleum and Minerals (CPM). Since that time, the University enrollment has grown to a level that is expected to exceed 8,000 by the 2009-2009 academic year."
+    />
+
+    <!-- Google / Search Engine Tags -->
+    <meta
+      itemprop="name"
+      content="King Fahad University for Petroleum and Minerals"
+    />
+    <meta
+      itemprop="description"
+      content="King Fahd University of Petroleum & Minerals (KFUPM) was officially established by Royal Decree on 5 Jumada 1, 1383 (23 September, 1963). The first students were admitted a year later, on 23 September, 1964, when 67 young men enrolled in what was then named the College of Petroleum and Minerals (CPM). Since that time, the University enrollment has grown to a level that is expected to exceed 8,000 by the 2009-2009 academic year."
+    />
+    <meta
+      itemprop="image"
+      content="http://www.mapnews.com/wp-content/uploads/2018/07/kfupm.jpg"
+    />
   </head>
 
   <body>
+    <!--Here I used grid structure which is diffrent than the elements structure. This structure prperly fits what I want to do on this website-->
     <div class="grid-container">
       <div class=" header-grid">
         <div class="bannar"></div>
         <div class="login">
           <div class="container">
+            <!--This label creates the username input box-->
             <label for="uname"><b>Username</b></label>
             <input
               type="text"
@@ -22,6 +44,7 @@
               required
             />
 
+            <!--This label creates the password box with the input appearing as stars (i.e. *******)-->
             <label for="psw"><b>Password</b></label>
             <input
               type="password"
@@ -29,8 +52,9 @@
               name="psw"
               required
             />
-
+            <!--This button creates the submit button-->
             <button type="submit">Login</button>
+            <!--This creates a checkbox to check/uncheck-->
             <label>
               <input type="checkbox" checked="checked" name="remember" />
               Remember me
@@ -47,7 +71,7 @@
             alt="KFUPM Campus"
             usemap="#kfupmmap"
           />
-
+          <!--The map allows to create a clickable invisible boxes to whatever shape you want it to be clicked. Here, the KFUPM buildings are highlighted in the picture from which it directs the user to the intended website/department of that building-->
           <map name="kfupmmap">
             <area
               shape="rect"
@@ -121,6 +145,7 @@
           </div>
         </div>
       </div>
+      <!--The way the two parts of the footer are ditributed are detailed in the style.css page-->
       <div class="footer-grid">
         <div class="Copyrights-text">
           Copyrights &copy; 2018 King Fahad University for petroleum & <br />
